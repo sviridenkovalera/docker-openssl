@@ -1,4 +1,4 @@
-# Alpine(latest) image with openssl installed and set as entrypoint
+# Alpine(3.18.4) image with openssl installed and set as entrypoint
 
 The working directory is set to `/workdir`, so that is a convenient place to volume mount certificate and key files.
 
