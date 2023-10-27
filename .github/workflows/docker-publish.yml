@@ -6,8 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '53 * * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -19,7 +17,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ env.DOCKERHUB_IMAGE_NAME }}
+  IMAGE_NAME: ${{ secrets.DOCKERHUB_IMAGE_NAME }}
 
 
 jobs:
